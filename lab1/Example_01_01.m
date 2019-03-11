@@ -1,5 +1,6 @@
 function Example_01_01
-% Создание сервера Word.Application
+% Создание сервера Word.Application с автоотчетом
+
 h = h_msw;
 h.Visible = true;
 % get(h) - свойства (getter)
@@ -16,3 +17,5 @@ hDoc.Close;
 if h.Documents.Count > 0
     h.Documents.Close;
 end
+
+AUTO_WORD_REPORT(1, 'Автоматическое создание отчета по лабораторной работе.');
