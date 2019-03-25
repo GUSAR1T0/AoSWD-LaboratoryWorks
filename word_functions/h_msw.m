@@ -4,7 +4,7 @@ function [h] = h_msw
 persistent h_actx_word_server;
 try
     if ~isempty(h_actx_word_server)
-        h_actx_word_server.Visible;
+        h_actx_word_server.Visible = true;
     end
 catch err
     if ~isempty(h_actx_word_server)
