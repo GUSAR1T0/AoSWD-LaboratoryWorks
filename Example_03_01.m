@@ -1,0 +1,16 @@
+function Example_03_01
+% Вставка стилей для разного текста
+
+format_str = '\it\fontname{Times New Roman}\fontsize{16}';
+hDoc = msword_open('OpenFile');
+hDoc.Activate;
+msword_type_text(sprintf('Название первого раздела\n'), 'Заголовок 1');
+msword_type_text(sprintf('Название первого подраздела\n'), 'Заголовок 2');
+msword_type_text(sprintf(...
+    ['Текст первого подраздела. '...
+    '\\itНаклонный шрифт.\\it ' ...
+    '\\bfЖирный шрифт\\bf '...
+    '\\-- \\uПодчеркнутый шрифт\\u. '...
+    '\\itx\\it\\_i\\_= \\itx\\it\\^2\\^ Обычный текст\n']));
+msword_type_text(sprintf('Название второго подраздела\n'), 'Заголовок 2');
+msword_type_text(sprintf('Текст \\itвторого\\it подраздела\n'));
