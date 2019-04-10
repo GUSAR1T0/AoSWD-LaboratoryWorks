@@ -50,5 +50,15 @@ if isempty(h_style)
             h_style.ParagraphFormat.SpaceAfter = 0;
             h_style.ParagraphFormat.Alignment = 'wdAlignParagraphJustify';
             h_style.ParagraphFormat.KeepWithNext = 0;
+        case '_Таблица: Haзвание_'
+            h_style.Font.Size = 11;
+            h_style.Font.Italic = 0;
+            h_style.Font.ColorIndex = 'wdAuto';
+            h_style.ParagraphFormat.LeftIndent = 0;
+            h_style.ParagraphFormat.RightIndent = 0;
+            h_style.ParagraphFormat.SpaceBefore = 10;
+            h_style.ParagraphFormat.SpaceAfter = 4;
+            h_style.ParagraphFormat.Alignment = 'wdAlignParagraphLeft';
+            h_style.ParagraphFormat.KeepWithNext = -1;
     end
 end
