@@ -6,4 +6,4 @@ switch ext
     otherwise, FileName = [FileName ext];
 end
 FileNameExt = [FileName '.docx'];
-FullFileName = fullfile(full_path, FileName);
+FullFileName = fullfile(full_path, FileNameExt);
