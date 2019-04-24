@@ -2,7 +2,6 @@ function Example_04_01
 % Вставка таблицы
 
 hDoc = msword_open('InsertTables');
-hDoc.Activate;
 
 NameRows = {'\bfВариант 1\bf'; '\bfВариант 2\bf'};
 NameCols = {'\bfN\bf' '\bf\itf\it(\itx\it)\bf', '\bf\itx\it\_1\_\bf', '\bf\itx\it\_2\_\bf',...

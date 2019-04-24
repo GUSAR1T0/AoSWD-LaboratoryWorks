@@ -25,3 +25,4 @@ switch mode
     case 'rewrite'
         msword_command('Ctrl+A', 'Del');
 end
+hDoc.Activate;

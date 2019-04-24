@@ -3,7 +3,6 @@ function Example_03_01
 
 format_str = '\it\fontname{Times New Roman}\fontsize{16}';
 hDoc = msword_open('OpenFile');
-hDoc.Activate;
 msword_type_text(sprintf('Название первого раздела\n'), 'Заголовок 1');
 msword_type_text(sprintf('Название первого подраздела\n'), 'Заголовок 2');
 msword_type_text(sprintf(...
