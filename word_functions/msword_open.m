@@ -6,8 +6,8 @@ if ~isempty(varargin), mode = varargin{1}; end
 [FullFileName, FileNameExt, full_path] = preprocess_filename(FileName);
 hDoc = [];
 for i=1:h.Documents.Count
-    if strcmp(h.Documents.Item(1).Name, FileNameExt)
-        hDoc = h.Documents.Item(1);
+    if strcmp(h.Documents.Item(i).Name, FileNameExt)
+        hDoc = h.Documents.Item(i);
     end
 end
 if isempty(hDoc)
